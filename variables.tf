@@ -1,11 +1,11 @@
 variable "user_name" {
     description = "The name for your IAM user"
     type = string
-    default = "Terraform_Course"
+    default = "Developer_Emma"
 }
 
 variable "filename" {
     description = "The name of the file that holds IAM user credentials"
     type = string
-    default = "tf_access_key.txt"
+    default = "developer_access_account_info.txt"
 }

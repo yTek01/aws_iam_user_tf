@@ -15,3 +15,9 @@ resource "local_file" "access_key_file" {
     Secret Key: ${aws_iam_access_key.access_key.secret}
   EOT
 }
+
+resource "aws_iam_user_policy_attachment" "admin_policy_attachment" {
+  user       = aws_iam_user.fine_grained_user.name
+  policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
+}
+
